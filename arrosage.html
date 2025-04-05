@@ -1,69 +1,162 @@
 <!DOCTYPE html>
 <html lang="fr">
- <head>
- <meta charset="utf-8" />
- <title>Lucas Jardins</title>
- <link rel="stylesheet" href="style.css" type="text/css" />
- <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
- <script src="https://kit.fontawesome.com/58fbc1defa.js" crossorigin="anonymous"></script>
- </head>
- <body>
-    <header>
-        <nav>
-        <h1 class="titre">Lucas Jardins</h1>
-        <label for="toggle">☰</label>
-        <input type="checkbox" id="toggle">
-          <ul class=menu>
-            <li><a href="contact.html">CONTACT</a>
-            <li><a href="propos.html">A PROPOS</a>
-            <li><a href="index.html #lignes">NOS SERVICES</a>
-            <li><a href="faq.html">FAQ</a>
-            <li><a href="index.html">ACCUEIL</a>
-            </ul>
-        </nav>
-       </header>
-       <div class="image">
-        <img src="images/arrosage/arrosage0.webp" alt="Herbes">
-        <i class="fa-solid fa-arrow-down"></i>
+<head>
+  <meta charset="utf-8">
+  <title>Lucas Jardins - Arrosage</title>
+  <link rel="stylesheet" href="styled.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Installez un système d’arrosage automatique performant avec Lucas Jardins pour un jardin toujours vert et sans contraintes.">
+  <meta name="keywords" content="arrosage, jardin, goutte à goutte, arrosage automatique, Lucas Jardins">
+  <meta name="author" content="Lucas Jardins">
+  <script src="https://kit.fontawesome.com/58fbc1defa.js" crossorigin="anonymous"></script>
+
+  <!-- JSON-LD pour le référencement -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Arrosage automatique",
+    "description": "Installation de systèmes d’arrosage automatique pour jardin, incluant goutte-à-goutte, arrosage intégré et programmateurs connectés.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Lucas Jardins",
+      "url": "https://justinebrnb.github.io",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://justinebrnb.github.io/images/logo/Logo.webp",
+        "width": 150,
+        "height": 150
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "102 Chemin du Génie",
+        "addressLocality": "Nice",
+        "postalCode": "06000",
+        "addressRegion": "Provence-Alpes-Côte d'Azur",
+        "addressCountry": "FR"
+      },
+      "telephone": "+33-7-88-76-05-71",
+      "email": "contact@lucasjardins.fr"
+    },
+    "areaServed": {
+      "@type": "Place",
+      "name": "Nice et ses environs (rayon de 30 km)"
+    },
+    "serviceType": ["Arrosage automatique", "Goutte à goutte", "Programmation d’arrosage", "Arrosage enterré"],
+    "url": "https://justinebrnb.github.io/arrosage.html",
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "EUR",
+      "price": "Sur devis",
+      "availability": "https://schema.org/InStock",
+      "validFrom": "2025-03-01"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "18"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Julien Perrin" },
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "reviewBody": "Très satisfait de l'installation du système d’arrosage automatique, efficace et invisible !"
+      },
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Clara Dufresne" },
+        "reviewRating": { "@type": "Rating", "ratingValue": "4.8", "bestRating": "5" },
+        "reviewBody": "Installation rapide, explications claires et suivi au top."
+      }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=100089258752223",
+      "https://www.instagram.com/lucasjardins06/"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1 class="titre">Lucas Jardins</h1>
+      <label for="toggle">☰</label>
+      <input type="checkbox" id="toggle">
+      <ul class="menu">
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="propos.html">A PROPOS</a></li>
+        <li><a href="index.html#lignes">NOS SERVICES</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="index.html">ACCUEIL</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <nav aria-label="breadcrumb" class="breadcrumb">
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="index.html#lignes">Nos services</a></li>
+      <li>Arrosage</li>
+    </ul>
+  </nav>
+
+  <div class="image">
+    <img src="images/arrosage/arrosage0.webp" alt="Système d’arrosage dans un jardin">
+    <i class="fa-solid fa-arrow-down"></i>
+  </div>
+
+  <section id="nos-services" class="service">
+    <div class="contenu">
+      <h2>Arrosage</h2>
+      <p>Pour un jardin en pleine santé toute l’année, Lucas Jardins propose l’installation de dispositifs d’arrosage automatique efficaces, économiques et discrets.</p>
+
+      <h3>Pourquoi choisir un système d’arrosage automatique ?</h3>
+      <ul>
+        <li><strong>Gain de temps :</strong> Fini les allers-retours avec l’arrosoir. Votre jardin s’arrose tout seul, même pendant vos vacances !</li>
+        <li><strong>Économie d’eau :</strong> Grâce à un dosage précis, vous arrosez juste ce qu’il faut, où il faut.</li>
+        <li><strong>Croissance optimale :</strong> Vos plantes reçoivent l’eau au bon moment, pour un développement régulier et durable.</li>
+        <li><strong>Installation discrète :</strong> Tuyaux enterrés ou systèmes invisibles en surface, l’esthétique de votre jardin est préservée.</li>
+      </ul>
+
+      <h3>Nos prestations d’arrosage</h3>
+      <h4>➡ Installation de systèmes goutte à goutte</h4>
+      <p>Idéal pour les haies, potagers et massifs, le goutte à goutte permet un arrosage ciblé et sans gaspillage.</p>
+
+      <h4>➡ Arrosage intégré enterré</h4>
+      <p>Arroseurs escamotables pour pelouses et grandes surfaces : un confort d’utilisation et un résultat professionnel.</p>
+
+      <h4>➡ Programmateurs intelligents</h4>
+      <p>Contrôle de l’arrosage selon la météo, l’heure ou la saison : votre jardin est entre de bonnes mains, même en votre absence.</p>
+
+      <h4>➡ Entretien & réparation</h4>
+      <p>Vérification, réglage ou remplacement des éléments existants : nous assurons le bon fonctionnement de vos systèmes dans la durée.</p>
+
+      <h3>Pourquoi faire appel à Lucas Jardins ?</h3>
+      <ul>
+        <li>Étude personnalisée selon la configuration de votre jardin</li>
+        <li>Produits de qualité et durables</li>
+        <li>Installation rapide et propre</li>
+        <li>Accompagnement et conseils d’entretien</li>
+        <li>Devis gratuit sans engagement</li>
+      </ul>
+
+      <p>Faites le choix de la tranquillité et de l’efficacité. Contactez-nous pour un arrosage sur-mesure et durable !</p>
     </div>
+  </section>
 
-
-    <footer>
-      <div id="RS">
-      <h3 class = "footer1"> Nos Réseaux Sociaux</h3>
-      <h4 class = "footer2"> Pour ne jamais rien manquer</h4>
-      <p><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><img  src="images/logo1.png" alt="Facebook" width="70" height="70"></a>
-      <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><img  src="images/logo3.png" alt="Instagram" width="70" height="70"></a></p>
-      </div>
-      <div class="contact">
-      <h3 class = "footer1"> Vous voulez nous contacter ?</h3>
-      <h4 class = "footer2"> Lucas Jardins<BR>
-       102 Chemin du Génie,<BR> 06000 Nice<BR>Tel : 07.88.76.05.71<BR>
-      Fax : 01.63.45.78.52<BR>Email : contact@lucasjardins.com</h4>
-      </div>
-         <div class="newsletter">
-      <h3 class = "footer1"> Restez au courant de nos actualités</h3>
-      <h4 class = "footer2"> Rejoignez notre newsletter</h4>
-      <form>
-         <label for="email"></label>
-         <input type="email" id="email" name="email" placeholder="Votre adresse mail">
-         <input type="submit" id="submit" value="Envoyer">
-       </form>
-   </div>
-   <BR>
-    <!-- FOOTER -->
   <footer>
     <div id="RS">
-      <h3 class="footer1"> Nos Réseaux Sociaux</h3>
-      <h4 class="footer2"> Pour ne jamais rien manquer</h4>
+      <h3 class="footer1">Nos Réseaux Sociaux</h3>
+      <h4 class="footer2">Pour ne jamais rien manquer</h4>
       <p>
-        <p><a href="https://www.facebook.com/people/Lucas-Jardins/100089258752223/" target="_blank" rel="noopener noreferrer"><a href="https://www.facebook.com" target="_blank"><img src="images/RS/logo1.png" alt="Facebook" width="70" height="70"></a>
-        <a href="https://www.instagram.com/lucasjardins06/" target="_blank" rel="noopener noreferrer"><a href="https://www.instagram.com" target="_blank"><img src="images/RS/logo3.png" alt="Instagram" width="70" height="70"></a>
+        <a href="https://www.facebook.com/profile.php?id=100089258752223" target="_blank" rel="noopener noreferrer"><img src="images/RS/logo1.png" alt="Facebook" width="70" height="70"></a>
+        <a href="https://www.instagram.com/lucasjardins06/" target="_blank" rel="noopener noreferrer"><img src="images/RS/logo3.png" alt="Instagram" width="70" height="70"></a>
       </p>
     </div>
-
     <div class="contact">
-      <h3 class="footer1"> Vous voulez nous contacter ?</h3>
+      <h3 class="footer1">Vous voulez nous contacter ?</h3>
       <h4 class="footer2">
         Lucas Jardins<br>
         102 Chemin du Génie,<br>
@@ -73,25 +166,22 @@
         Email : contact@lucasjardins.com
       </h4>
     </div>
-
     <div class="newsletter">
-      <h3 class="footer1"> Restez au courant de nos actualités</h3>
-      <h4 class="footer2"> Rejoignez notre newsletter</h4>
+      <h3 class="footer1">Restez au courant de nos actualités</h3>
+      <h4 class="footer2">Rejoignez notre newsletter</h4>
       <form>
-        <label for="email"></label>
-        <input type="email" id="email" name="email" placeholder="Votre adresse mail">
-        <input type="submit" id="submit" value="Envoyer">
+        <input type="email" name="email" placeholder="Votre adresse mail">
+        <input type="submit" value="Envoyer">
       </form>
     </div>
   </footer>
 
   <footer>
     <div class="image566">
-      <img class="logo44" src="images/Logo.webp" alt="Logo de Lucas Jardins" width="200" height="200">
+      <img class="logo44" src="images/logo/Logo.webp" alt="Logo de Lucas Jardins" width="200" height="200">
     </div>
-    <p id="trucc"> L’engagement du travail bien fait, la disponibilité, le conseil et l’accompagnement de nos clients font de nous plus qu’un simple prestataire : véritablement « votre partenaire espaces verts » !</p>
+    <p id="trucc">L’engagement du travail bien fait, la disponibilité, le conseil et l’accompagnement de nos clients font de nous plus qu’un simple prestataire : véritablement « votre partenaire espaces verts » !</p>
   </footer>
-
   <footer>
     <p class="truccc">©2025 Lucas Jardins. Tous droits réservés - Conception : Studio Gresel</p>
   </footer>
