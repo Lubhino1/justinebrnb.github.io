@@ -1,68 +1,215 @@
 <!DOCTYPE html>
 <html lang="fr">
- <head>
- <meta charset="utf-8" />
- <title>Lucas Jardins</title>
- <link rel="stylesheet" href="style.css" type="text/css" />
- <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
- <script src="https://kit.fontawesome.com/58fbc1defa.js" crossorigin="anonymous"></script>
- </head>
- <body>
-    <header>
-        <nav>
-        <h1 class="titre">Lucas Jardins</h1>
-        <label for="toggle">☰</label>
-        <input type="checkbox" id="toggle">
-          <ul class=menu>
-            <li><a href="contact.html">CONTACT</a>
-            <li><a href="propos.html">A PROPOS</a>
-            <li><a href="index.html #lignes">NOS SERVICES</a>
-            <li><a href="faq.html">FAQ</a>
-            <li><a href="index.html">ACCUEIL</a>
-            </ul>
-        </nav>
-       </header>
-       <div class="image">
-        <img src="images/plantation/plantation0.webp" alt="Herbes">
-        <i class="fa-solid fa-arrow-down"></i>
+<head>
+  <!-- Informations de base pour le navigateur et le SEO -->
+  <meta charset="utf-8" />
+  <title>Lucas Jardins - Plantations</title>
+  <link rel="stylesheet" href="styled.css" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Offrez une nouvelle vie à votre jardin avec notre service de plantations.">
+  <meta name="keywords" content="plantation, jardin, arbres, fleurs, potager, Lucas Jardins">
+  <meta name="author" content="Lucas Jardins">
+  <script src="https://kit.fontawesome.com/58fbc1defa.js" crossorigin="anonymous"></script>
+
+  <!-- JSON-LD pour le référencement -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Plantations",
+    "description": "Service de plantations de fleurs, arbres, arbustes et potagers. Une solution sur mesure pour sublimer votre jardin.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Lucas Jardins",
+      "url": "https://justinebrnb.github.io",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://justinebrnb.github.io/images/logo/Logo.webp",
+        "width": 150,
+        "height": 150
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "102 Chemin du Génie",
+        "addressLocality": "Nice",
+        "postalCode": "06000",
+        "addressRegion": "Provence-Alpes-Côte d'Azur",
+        "addressCountry": "FR"
+      },
+      "telephone": "+33-7-88-76-05-71",
+      "email": "contact@lucasjardins.fr"
+    },
+    "areaServed": {
+      "@type": "Place",
+      "name": "Nice et ses environs (rayon de 30 km)"
+    },
+    "serviceType": ["Plantation", "Aménagement floral", "Création de potager", "Plantation d’arbres", "Plantation écologique"],
+    "url": "https://justinebrnb.github.io/plantations.html",
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "EUR",
+      "price": "Sur devis",
+      "availability": "https://schema.org/InStock",
+      "validFrom": "2025-03-01"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "22"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "author": {
+          "@type": "Person",
+          "name": "Clémentine Leroy"
+        },
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "reviewBody": "Travail soigné et à l'écoute, mes massifs sont magnifiques !"
+      },
+      {
+        "@type": "Review",
+        "author": {
+          "@type": "Person",
+          "name": "Mehdi B."
+        },
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "4.8",
+          "bestRating": "5"
+        },
+        "reviewBody": "Une équipe compétente et de bon conseil pour le choix des arbres."
+      }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=100089258752223",
+      "https://www.instagram.com/lucasjardins06/"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- En tête du site -->
+  <header>
+    <nav>
+      <h1 class="titre">Lucas Jardins</h1>
+      <label for="toggle">☰</label>
+      <input type="checkbox" id="toggle">
+      <ul class="menu">
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="propos.html">A PROPOS</a></li>
+        <li><a href="index.html#lignes">NOS SERVICES</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="index.html">ACCUEIL</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- breadcrumb/ fil d'Ariane -->
+  <nav aria-label="breadcrumb" class="breadcrumb">
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="index.html#lignes">Nos services</a></li>
+      <li>Plantations</li>
+    </ul>
+  </nav>
+
+  <!-- IMAGE DE LA PAGE PLANTATIONS -->
+  <div class="image">
+    <img src="images/plantation/plantation0.webp" alt="plantation dans un jardin">
+  </div>
+
+  <!-- CONTENU PRINCIPAL DE LA PAGE -->
+  <section id="nos-services" class="service">
+    <div class="contenu">
+      <h2>Nos services de plantations</h2>
+      <p>La plantation est l’âme d’un jardin. Elle transforme un espace vide en un lieu de vie, de couleurs et de senteurs. Que ce soit pour un jardin d’ornement, un potager ou un verger, Lucas Jardins vous accompagne dans chaque étape.</p>
+
+      <h3>Pourquoi faire appel à nos services de plantations ?</h3>
+      <ul>
+        <li><strong>Choix adaptés :</strong> Nous sélectionnons avec soin les plantes les mieux adaptées à votre sol, votre climat et vos envies.</li>
+        <li><strong>Harmonie esthétique :</strong> Nos équipes conçoivent des compositions harmonieuses pour sublimer vos extérieurs.</li>
+        <li><strong>Expertise technique :</strong> Nous préparons le terrain, plantons dans les règles de l’art et assurons un bon démarrage de chaque végétal.</li>
+        <li><strong>Conseils personnalisés :</strong> Chaque projet est unique : nous vous guidons dans l’entretien et la croissance de vos plantations.</li>
+      </ul>
+
+      <!-- Images illustrant les prestations de plantations -->
+      <img src="images/plantation/plantation1.webp" alt="Plantation d’arbustes" class="image-gauche">
+      <img src="images/plantation/plantation2.webp" alt="Massif de fleurs" class="image-milieu">
+      <img src="images/plantation/plantation3.webp" alt="Création de potager" class="image-droite">
+
+      <h3>Nos prestations</h3>
+      <h4>➡ Plantation de fleurs et arbustes</h4>
+      <p>Idéal pour égayer un jardin ou créer des massifs colorés et structurés.</p>
+
+      <h4>➡ Plantation d’arbres</h4>
+      <p>Fruitier, ornemental ou d’ombrage : nous vous aidons à choisir et planter l’arbre qui sublimera votre espace.</p>
+
+      <h4>➡ Création de potager</h4>
+      <p>Du montage des bacs à la sélection des légumes, nous créons pour vous un coin potager esthétique et productif.</p>
+
+      <h4>➡ Reboisement et plantations écologiques</h4>
+      <p>Pour un projet responsable, nous proposons également des essences locales favorisant la biodiversité.</p>
+
+      <h3>Pourquoi choisir Lucas Jardins ?</h3>
+      <ul>
+        <li>Conseils d’experts et accompagnement personnalisé</li>
+        <li>Respect du calendrier naturel des plantations</li>
+        <li>Matériel et techniques respectueux de l’environnement</li>
+        <li>Tarifs transparents et devis gratuit</li>
+      </ul>
+
+      <p>Contactez-nous pour imaginer ensemble le jardin qui vous ressemble !</p>
+    </div>
+  </section>
+
+  <!-- PIED DE PAGE : infos + réseaux + contact -->
+  <footer>
+    <div id="RS">
+      <h3 class="footer1">Nos Réseaux Sociaux</h3>
+      <h4 class="footer2">Pour ne jamais rien manquer</h4>
+      <p>
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><img src="images/RS/logo1.png" alt="Facebook" width="70" height="70"></a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><img src="images/RS/logo3.png" alt="Instagram" width="70" height="70"></a>
+      </p>
     </div>
 
+    <div class="contact">
+      <h3 class="footer1">Vous voulez nous contacter ?</h3>
+      <h4 class="footer2">
+        Lucas Jardins<br>
+        102 Chemin du Génie,<br>06000 Nice<br>Tel : 07.88.76.05.71<br>
+        Fax : 01.63.45.78.52<br>Email : contact@lucasjardins.com
+      </h4>
+    </div>
 
-    <footer>
-        <div id="RS">
-        <h3 class = "footer1"> Nos Réseaux Sociaux</h3>
-        <h4 class = "footer2"> Pour ne jamais rien manquer</h4>
-        <p><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><img  src="images/logo1.png" alt="Facebook" width="70" height="70"></a>
-      
-        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><img  src="images/logo3.png" alt="Instagram" width="70" height="70"></a></p>
-        </div>
-        <div class="contact">
-        <h3 class = "footer1"> Vous voulez nous contacter ?</h3>
-        <h4 class = "footer2"> Lucas Jardins<BR>
-         102 Chemin du Génie,<BR> 06000 Nice<BR>Tel : 07.88.76.05.71<BR>
-        Fax : 01.63.45.78.52<BR>Email : contact@lucasjardins.com</h4>
-        </div>
-           <div class="newsletter">
-        <h3 class = "footer1"> Restez au courant de nos actualités</h3>
-        <h4 class = "footer2"> Rejoignez notre newsletter</h4>
-        <form>
-           <label for="email"></label>
-           <input type="email" id="email" name="email" placeholder="Votre adresse mail">
-           <input type="submit" id="submit" value="Envoyer">
-         </form>
-     </div>
-     <BR>
-     </footer>
-     <footer>
-        <div class="image566">
-        <img class="logo44" src="images/logo.webp" alt="Logo de la galerie d'art" width="200" height="200">
-        </div>
-        <p id="trucc"> L’engagement du travail bien fait, la disponibilité, le conseil et l’accompagnement de nos clients, font de nous plus qu’un simple prestataire, mais véritablement « votre partenaire espaces verts » !</p>
-     </footer>
-     <footer>
-        <p class="truccc"> ©2025 Lucas Jardin. Tous droits réservés - Conception : Studio Gresel</p>
-     </footer>
+    <div class="newsletter">
+      <h3 class="footer1">Restez au courant de nos actualités</h3>
+      <h4 class="footer2">Rejoignez notre newsletter</h4>
+      <form>
+        <input type="email" id="email" name="email" placeholder="Votre adresse mail">
+        <input type="submit" id="submit" value="Envoyer">
+      </form>
+    </div>
+  </footer>
 
+  <!-- logo + phrase signature de l'entreprise -->
+  <footer>
+    <div class="image566">
+      <img class="logo44" src="images/logo/Logo.webp" alt="Logo de Lucas Jardins" width="200" height="200">
+    </div>
+    <p id="trucc">L’engagement du travail bien fait, la disponibilité, le conseil et l’accompagnement de nos clients font de nous plus qu’un simple prestataire, mais véritablement « votre partenaire espaces verts » !</p>
+  </footer>
 
- </body>
- </html>
+  <!-- mentions légales -->
+  <footer>
+    <p class="truccc">©2025 Lucas Jardins. Tous droits réservés - Conception : Studio Gresel</p>
+  </footer>
+</body>
+</html>
