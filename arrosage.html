@@ -1,95 +1,148 @@
 <!DOCTYPE html>
 <html lang="fr">
- <head>
- <meta charset="utf-8" />
- <title>Lucas Jardins</title>
- <link rel="stylesheet" href="style.css" type="text/css" />
- <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
- <script src="https://kit.fontawesome.com/58fbc1defa.js" crossorigin="anonymous"></script>
- </head>
- <body>
-    <header>
-        <nav>
-        <h1 class="titre">Lucas Jardins</h1>
-        <label for="toggle">☰</label>
-        <input type="checkbox" id="toggle">
-          <ul class=menu>
-            <li><a href="contact.html">CONTACT</a>
-            <li><a href="propos.html">A PROPOS</a>
-            <li><a href="index.html #lignes">NOS SERVICES</a>
-            <li><a href="faq.html">FAQ</a>
-            <li><a href="index.html">ACCUEIL</a>
-            </ul>
-        </nav>
-       </header>
-       <div class="image">
-        <img src="images/arrosage/arrosage0.webp" alt="Herbes">
-        <i class="fa-solid fa-arrow-down"></i>
+<head>
+  <!-- Métadonnées de base -->
+  <meta charset="utf-8" />
+  <title>Lucas Jardins - Arrosage</title>
+  <link rel="stylesheet" href="styled.css" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Un arrosage efficace, discret et intelligent pour un jardin toujours vert.">
+  <meta name="keywords" content="arrosage automatique, jardin, goutte à goutte, programmateur, Lucas Jardins">
+  <meta name="author" content="Lucas Jardins">
+  <script src="https://kit.fontawesome.com/58fbc1defa.js" crossorigin="anonymous"></script>
+
+  <!-- Open Graph  -->
+  <meta property="og:title" content="Installation d’arrosage automatique - Lucas Jardins">
+  <meta property="og:description" content="Optez pour la simplicité avec un système d’arrosage automatique fiable, discret et économe.">
+  <meta property="og:url" content="https://justinebrnb.github.io/arrosage.html">
+  <meta property="type" content="service">
+  <meta property="og:image" content="https://justinebrnb.github.io/images/arrosage/arrosage0.webp">
+  <meta property="og:site_name" content="Lucas Jardins">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Index", "item": "https://justinebrnb.github.io"},
+      {"@type": "ListItem", "position": 2, "name": "FAQ", "item": "https://justinebrnb.github.io/faq.html"},
+      {"@type": "ListItem", "position": 3, "name": "Arrosage", "item": "https://justinebrnb.github.io/arrosage.html"},
+      {"@type": "ListItem", "position": 4, "name": "À propos", "item": "https://justinebrnb.github.io/propos.html"},
+      {"@type": "ListItem", "position": 5, "name": "Contact", "item": "https://justinebrnb.github.io/contact.html"}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- en tête du site -->
+  <header>
+    <nav>
+      <h1 class="titre">Lucas Jardins</h1>
+      <label for="toggle">☰</label>
+      <input type="checkbox" id="toggle">
+      <ul class="menu">
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="propos.html">A PROPOS</a></li>
+        <li><a href="index.html#lignes">NOS SERVICES</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="index.html">ACCUEIL</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Fil d’Ariane/breadcrumb -->
+  <nav aria-label="breadcrumb" class="breadcrumb">
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="index.html#lignes">Nos services</a></li>
+      <li>Arrosage</li>
+    </ul>
+  </nav>
+
+  <!-- image du service -->
+  <div class="image">
+    <img src="images/arrosage/arrosage0.webp" alt="Système d’arrosage dans un jardin">
+    <i class="fa-solid fa-arrow-down"></i>
+  </div>
+
+  <!--  présentation du service -->
+  <section id="nos-services" class="service">
+    <div class="contenu">
+      <h2>Arrosage automatique</h2>
+      <p>Pour un jardin en pleine santé toute l’année, Lucas Jardins propose l’installation de dispositifs d’arrosage automatique efficaces, économiques et discrets. Profitez d’un système intelligent qui libère votre temps et garantit des plantes toujours bien hydratées.</p>
+
+      <h3>Pourquoi choisir un système d’arrosage automatique ?</h3>
+      <ul>
+        <li><strong>Gain de temps :</strong> Fini les allers-retours avec l’arrosoir. Votre jardin s’arrose tout seul, même pendant vos vacances !</li>
+        <li><strong>Économie d’eau :</strong> Grâce à un dosage précis, vous arrosez juste ce qu’il faut, où il faut.</li>
+        <li><strong>Croissance optimale :</strong> Vos plantes reçoivent l’eau au bon moment, pour un développement régulier et durable.</li>
+        <li><strong>Installation discrète :</strong> Tuyaux enterrés ou systèmes invisibles en surface, l’esthétique de votre jardin est préservée.</li>
+      </ul>
+
+      <h3>Nos prestations d’arrosage</h3>
+      <h4>➡ Installation de systèmes goutte à goutte</h4>
+      <p>Idéal pour les haies, potagers et massifs, le goutte à goutte permet un arrosage ciblé et sans gaspillage.</p>
+
+      <h4>➡ Arrosage intégré enterré</h4>
+      <p>Arroseurs escamotables pour pelouses et grandes surfaces : un confort d’utilisation et un résultat professionnel.</p>
+
+      <h4>➡ Programmateurs intelligents</h4>
+      <p>Contrôle de l’arrosage selon la météo, l’heure ou la saison : votre jardin est entre de bonnes mains, même en votre absence.</p>
+
+      <h4>➡ Entretien & réparation</h4>
+      <p>Vérification, réglage ou remplacement des éléments existants : nous assurons le bon fonctionnement de vos systèmes dans la durée.</p>
+
+      <h3>Pourquoi faire appel à Lucas Jardins ?</h3>
+      <ul>
+        <li>Étude personnalisée selon la configuration de votre jardin</li>
+        <li>Produits de qualité et durables</li>
+        <li>Installation rapide et propre</li>
+        <li>Accompagnement et conseils d’entretien</li>
+        <li>Devis gratuit sans engagement</li>
+      </ul>
+
+      <p>Faites le choix de la tranquillité et de l’efficacité. Contactez-nous pour un arrosage sur-mesure et durable !</p>
     </div>
+  </section>
 
-
-    <footer>
-      <div id="RS">
-      <h3 class = "footer1"> Nos Réseaux Sociaux</h3>
-      <h4 class = "footer2"> Pour ne jamais rien manquer</h4>
-      <p><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><img  src="images/logo1.png" alt="Facebook" width="70" height="70"></a>
-      <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><img  src="images/logo3.png" alt="Instagram" width="70" height="70"></a></p>
-      </div>
-      <div class="contact">
-      <h3 class = "footer1"> Vous voulez nous contacter ?</h3>
-      <h4 class = "footer2"> Lucas Jardins<BR>
-       102 Chemin du Génie,<BR> 06000 Nice<BR>Tel : 07.88.76.05.71<BR>
-      Fax : 01.63.45.78.52<BR>Email : contact@lucasjardins.com</h4>
-      </div>
-         <div class="newsletter">
-      <h3 class = "footer1"> Restez au courant de nos actualités</h3>
-      <h4 class = "footer2"> Rejoignez notre newsletter</h4>
-      <form>
-         <label for="email"></label>
-         <input type="email" id="email" name="email" placeholder="Votre adresse mail">
-         <input type="submit" id="submit" value="Envoyer">
-       </form>
-   </div>
-   <BR>
-    <!-- FOOTER -->
+  <!-- Pied de page -->
   <footer>
     <div id="RS">
-      <h3 class="footer1"> Nos Réseaux Sociaux</h3>
-      <h4 class="footer2"> Pour ne jamais rien manquer</h4>
+      <h3 class="footer1">Nos Réseaux Sociaux</h3>
+      <h4 class="footer2">Pour ne jamais rien manquer</h4>
       <p>
-        <p><a href="https://www.facebook.com/people/Lucas-Jardins/100089258752223/" target="_blank" rel="noopener noreferrer"><a href="https://www.facebook.com" target="_blank"><img src="images/RS/logo1.png" alt="Facebook" width="70" height="70"></a>
-        <a href="https://www.instagram.com/lucasjardins06/" target="_blank" rel="noopener noreferrer"><a href="https://www.instagram.com" target="_blank"><img src="images/RS/logo3.png" alt="Instagram" width="70" height="70"></a>
+        <a href="https://www.facebook.com/profile.php?id=100089258752223" target="_blank" rel="noopener noreferrer"><img src="images/RS/logo1.png" alt="Facebook" width="70" height="70"></a>
+        <a href="https://www.instagram.com/lucasjardins06/" target="_blank" rel="noopener noreferrer"><img src="images/RS/logo3.png" alt="Instagram" width="70" height="70"></a>
       </p>
     </div>
 
     <div class="contact">
-      <h3 class="footer1"> Vous voulez nous contacter ?</h3>
+      <h3 class="footer1">Vous voulez nous contacter ?</h3>
       <h4 class="footer2">
         Lucas Jardins<br>
-        102 Chemin du Génie,<br>
-        06000 Nice<br>
-        Tel : 07.88.76.05.71<br>
-        Fax : 01.63.45.78.52<br>
-        Email : contact@lucasjardins.com
+        102 Chemin du Génie,<br>06000 Nice<br>Tel : 07.88.76.05.71<br>
+        Fax : 01.63.45.78.52<br>Email : contact@lucasjardins.com
       </h4>
     </div>
 
     <div class="newsletter">
-      <h3 class="footer1"> Restez au courant de nos actualités</h3>
-      <h4 class="footer2"> Rejoignez notre newsletter</h4>
+      <h3 class="footer1">Restez au courant de nos actualités</h3>
+      <h4 class="footer2">Rejoignez notre newsletter</h4>
       <form>
-        <label for="email"></label>
         <input type="email" id="email" name="email" placeholder="Votre adresse mail">
         <input type="submit" id="submit" value="Envoyer">
       </form>
     </div>
   </footer>
 
+  <!-- Logo et signature -->
   <footer>
     <div class="image566">
-      <img class="logo44" src="images/Logo.webp" alt="Logo de Lucas Jardins" width="200" height="200">
+      <img class="logo44" src="images/logo/Logo.webp" alt="Logo de Lucas Jardins" width="200" height="200">
     </div>
-    <p id="trucc"> L’engagement du travail bien fait, la disponibilité, le conseil et l’accompagnement de nos clients font de nous plus qu’un simple prestataire : véritablement « votre partenaire espaces verts » !</p>
+    <p id="trucc">L’engagement du travail bien fait, la disponibilité, le conseil et l’accompagnement de nos clients font de nous plus qu’un simple prestataire, mais véritablement « votre partenaire espaces verts » !</p>
   </footer>
 
   <footer>
